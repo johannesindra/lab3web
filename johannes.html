@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Lanjutan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Lanjutan</title>
+      </head>
+      <body>
+        <header>
+          <h1>Membuat Table</h1>
+        </header>
+      </body>
+    </html>
+
+    <table border="1" cellpadding="6" cellspacing="0">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Fakultas</th>
+          <th>Program Studi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.</td>
+          <td rowspan="3">Teknik</td>
+          <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Teknik Industri</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Teknik Lingkungan</td>
+        </tr>
+      </tbody>
+    </table>
+    <header>
+      <h1>Membuat Form</h1>
+    </header>
+
+    <form action="proses.php" method="post">
+      <fieldset>
+        <legend>Data Pelanggan</legend>
+        <p>
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" />
+        </p>
+        <p>
+          <label for="alamat">Alamat</label>
+          <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+        </p>
+        <p>
+          <label>Jenis Kelamin</label>
+          <input id="jk_l" type="radio" name="kelamin" value="L" /><label
+            for="jk_l"
+            >Laki-laki</label
+          >
+          <input id="jk_p" type="radio" name="kelamin" value="P" /><label
+            for="jk_p"
+            >Perempuan</label
+          >
+        </p>
+        <!-- Dropdown Menu -->
+        <p>
+          <label for="kota">Kota</label>
+          <select id="kota" name="kota">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+          </select>
+        </p>
+         <!-- Listbox dengan Multiple Selection -->
+        <p>
+          <label for="hobi">Hobi</label>
+          <select id="hobi" name="hobi[]" multiple size="4">
+            <option value="Bermain Sepak Bola">Bermain Sepak Bola</option>
+            <option value="Berenang">Berenang</option>
+            <option value="Membaca">Membaca</option>
+            <option value="Joging">Joging</option>
+          </select>
+        </p>
+        <p><input type="submit" value="Kirim" /></p>
+      </fieldset>
+    </form>
+ </body>
+</html>

@@ -1,0 +1,15 @@
+
+form p > label {
+display: inline-block;
+width: 100px;
+}
+form input[type="text"], form textarea {
+border: 1px solid #e1f00f;
+}
+form input[type="submit"] {
+border: 1px solid #000000;
+background-color: #000000;
+color: #ffffff;
+font-weight: bold;
+padding: 5px 15px;
+}
